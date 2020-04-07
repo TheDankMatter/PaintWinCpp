@@ -115,7 +115,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     PAINTSTRUCT ps;
     HDC hdc;
     TCHAR greeting[] = _T("Paint Hello world!");
-
+	TCHAR greeting1[] = _T("Przyk³ad œrodowiska GUI /Windows ");
     switch (message)
     {
     case WM_PAINT:
@@ -127,6 +127,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         TextOut(hdc,
             5, 5,
             greeting, _tcslen(greeting));
+		TextOut(hdc,
+			5, 25,
+			greeting1, _tcslen(greeting1));
         // End application-specific layout section.
 
         EndPaint(hWnd, &ps);

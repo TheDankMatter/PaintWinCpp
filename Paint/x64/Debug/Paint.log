@@ -1,0 +1,4 @@
+﻿  HelloWorld.cpp
+c:\users\luftmyszapc\desktop\paint\paint\helloworld.cpp(129): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+c:\users\luftmyszapc\desktop\paint\paint\helloworld.cpp(132): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+  Paint.vcxproj -> C:\Users\LuftmyszaPC\Desktop\Paint\x64\Debug\Paint.exe
