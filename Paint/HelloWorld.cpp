@@ -119,7 +119,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     switch (message)
     {
         case WM_CREATE: {
-
+             // Add menu items
             HMENU hMenuBar = CreateMenu();
             HMENU hFile = CreateMenu();
             HMENU hEdit = CreateMenu();
@@ -127,23 +127,27 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             HMENU hShapes = CreateMenu();
             HMENU hHelp = CreateMenu();
 
+            // Append menu items to main bar
             AppendMenu(hMenuBar, MF_POPUP, (UINT_PTR)hFile, LPCWSTR(L"File"));
             AppendMenu(hMenuBar, MF_POPUP, (UINT_PTR)hEdit, LPCWSTR(L"Edit"));
             AppendMenu(hMenuBar, MF_POPUP, (UINT_PTR)hOptions, LPCWSTR(L"Options"));
             AppendMenu(hMenuBar, MF_POPUP, (UINT_PTR)hShapes, LPCWSTR(L"Shapes"));
             AppendMenu(hMenuBar, MF_POPUP, (UINT_PTR)hHelp, LPCWSTR(L"Help"));
 
+            // Append items to "File" menu
             AppendMenu(hFile, MF_STRING, NULL, LPCWSTR(L"Save")); //Replace 'NULL' with ID_Save
             AppendMenu(hFile, MF_STRING, NULL, LPCWSTR(L"Load"));
             AppendMenu(hFile, MF_STRING, NULL, LPCWSTR(L"Exit"));
 
+            // Append items to "Options" menu
             AppendMenu(hOptions, MF_STRING, NULL, LPCWSTR(L"Line Width"));
 
+            // Append items to "Edit" menu
             AppendMenu(hEdit, MF_STRING, NULL, LPCWSTR(L"Clear All"));
             AppendMenu(hEdit, MF_STRING, NULL, LPCWSTR(L"Undo"));
             AppendMenu(hEdit, MF_STRING, NULL, LPCWSTR(L"Redo"));
 
-
+            // Append items to "Shapes" menu
             AppendMenu(hShapes, MF_STRING, NULL, LPCWSTR(L"Line"));
             AppendMenu(hShapes, MF_STRING, NULL, LPCWSTR(L"Circle"));
             AppendMenu(hShapes, MF_STRING, NULL, LPCWSTR(L"Rectangle"));
@@ -167,6 +171,10 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             TextOut(hdc,
                 5, 25,
                 greeting1, _tcslen(greeting1));
+            
+            // Draw rectangle
+            Rectangle(hdc, 100, 100, 300, 300);
+
             // End application-specific layout section.
 
             EndPaint(hWnd, &ps);
