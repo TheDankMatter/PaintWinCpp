@@ -115,31 +115,68 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     PAINTSTRUCT ps;
     HDC hdc;
     TCHAR greeting[] = _T("Paint Hello world!");
-	TCHAR greeting1[] = _T("Przyk³ad œrodowiska GUI /Windows ");
+	TCHAR greeting1[] = _T("GUI /Windows example");
     switch (message)
     {
-    case WM_PAINT:
-        hdc = BeginPaint(hWnd, &ps);
+        case WM_CREATE: {
 
-        // Here your application is laid out.
-        // For this introduction, we just print out "Hello, Windows desktop!"
-        // in the top left corner.
-        TextOut(hdc,
-            5, 5,
-            greeting, _tcslen(greeting));
-		TextOut(hdc,
-			5, 25,
-			greeting1, _tcslen(greeting1));
-        // End application-specific layout section.
+            HMENU hMenuBar = CreateMenu();
+            HMENU hFile = CreateMenu();
+            HMENU hEdit = CreateMenu();
+            HMENU hOptions = CreateMenu();
+            HMENU hShapes = CreateMenu();
+            HMENU hHelp = CreateMenu();
 
-        EndPaint(hWnd, &ps);
-        break;
-    case WM_DESTROY:
-        PostQuitMessage(0);
-        break;
-    default:
-        return DefWindowProc(hWnd, message, wParam, lParam);
-        break;
+            AppendMenu(hMenuBar, MF_POPUP, (UINT_PTR)hFile, LPCWSTR(L"File"));
+            AppendMenu(hMenuBar, MF_POPUP, (UINT_PTR)hEdit, LPCWSTR(L"Edit"));
+            AppendMenu(hMenuBar, MF_POPUP, (UINT_PTR)hOptions, LPCWSTR(L"Options"));
+            AppendMenu(hMenuBar, MF_POPUP, (UINT_PTR)hShapes, LPCWSTR(L"Shapes"));
+            AppendMenu(hMenuBar, MF_POPUP, (UINT_PTR)hHelp, LPCWSTR(L"Help"));
+
+            AppendMenu(hFile, MF_STRING, NULL, LPCWSTR(L"Save")); //Replace 'NULL' with ID_Save
+            AppendMenu(hFile, MF_STRING, NULL, LPCWSTR(L"Load"));
+            AppendMenu(hFile, MF_STRING, NULL, LPCWSTR(L"Exit"));
+
+            AppendMenu(hOptions, MF_STRING, NULL, LPCWSTR(L"Line Width"));
+
+            AppendMenu(hEdit, MF_STRING, NULL, LPCWSTR(L"Clear All"));
+            AppendMenu(hEdit, MF_STRING, NULL, LPCWSTR(L"Undo"));
+            AppendMenu(hEdit, MF_STRING, NULL, LPCWSTR(L"Redo"));
+
+
+            AppendMenu(hShapes, MF_STRING, NULL, LPCWSTR(L"Line"));
+            AppendMenu(hShapes, MF_STRING, NULL, LPCWSTR(L"Circle"));
+            AppendMenu(hShapes, MF_STRING, NULL, LPCWSTR(L"Rectangle"));
+            AppendMenu(hShapes, MF_STRING, NULL, LPCWSTR(L"Triangle"));
+
+            AppendMenu(hHelp, MF_STRING, NULL, LPCWSTR(L"Get help"));
+
+
+            SetMenu(hWnd, hMenuBar);
+            break;
+        }
+        case WM_PAINT:
+            hdc = BeginPaint(hWnd, &ps);
+
+            // Here your application is laid out.
+            // For this introduction, we just print out "Hello, Windows desktop!"
+            // in the top left corner.
+            TextOut(hdc,
+                5, 5,
+                greeting, _tcslen(greeting));
+            TextOut(hdc,
+                5, 25,
+                greeting1, _tcslen(greeting1));
+            // End application-specific layout section.
+
+            EndPaint(hWnd, &ps);
+            break;
+        case WM_DESTROY:
+            PostQuitMessage(0);
+            break;
+        default:
+            return DefWindowProc(hWnd, message, wParam, lParam);
+            break;
     }
 
     return 0;
