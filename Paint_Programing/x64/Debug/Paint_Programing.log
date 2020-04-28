@@ -1,0 +1,45 @@
+﻿  Globals.cpp
+  Listener.cpp
+  Mylog.cpp
+  Paint_Programing.cpp
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\Paint_Programing.cpp(476,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\Paint_Programing.cpp(515,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\Paint_Programing.cpp(546,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+  Save.cpp
+  TextObj.cpp
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(161,65): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(166,82): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(168,82): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(229,31): warning C4267: '=': conversion from 'size_t' to 'LONG', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(231,39): warning C4267: '=': conversion from 'size_t' to 'LONG', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(287,31): warning C4267: '=': conversion from 'size_t' to 'LONG', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(321,40): warning C4267: '=': conversion from 'size_t' to 'LONG', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(375,47): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(414,32): warning C4267: '=': conversion from 'size_t' to 'LONG', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(415,40): warning C4267: '=': conversion from 'size_t' to 'LONG', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(419,40): warning C4267: '=': conversion from 'size_t' to 'LONG', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(443,41): warning C4267: '=': conversion from 'size_t' to 'LONG', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(447,42): warning C4267: '=': conversion from 'size_t' to 'LONG', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(449,87): warning C4267: '=': conversion from 'size_t' to 'LONG', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(456,49): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(464,41): warning C4267: '=': conversion from 'size_t' to 'LONG', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(473,42): warning C4267: '=': conversion from 'size_t' to 'LONG', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(475,42): warning C4267: '=': conversion from 'size_t' to 'LONG', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\TextObj.cpp(688,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  WM_Command.cpp
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\WM_Command.cpp(402,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\WM_Command.cpp(505,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\WM_Command.cpp(841,15): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\WM_Command.cpp(857,15): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\WM_Command.cpp(998,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\WM_Command.cpp(1120,49): warning C4244: 'argument': conversion from 'WPARAM' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\WM_Command.cpp(1142,13): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\WM_Command.cpp(1145,33): warning C4244: 'argument': conversion from 'WPARAM' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\WM_Command.cpp(1234,90): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\WM_Command.cpp(1249,90): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\WM_Command.cpp(1265,89): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\WM_Command.cpp(1267,89): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\WM_Command.cpp(1269,89): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Piotr\Desktop\Source - Copy\Paint_Programing\WM_Command.cpp(1271,89): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  Paint_Programing.vcxproj -> C:\Users\Piotr\Desktop\Source - Copy\x64\Debug\Paint_Programing.exe
