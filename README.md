@@ -6,8 +6,8 @@ Wymagania dla dll i aplikacji (Ostatnia poprawna kompilacja):
  * Narzędzia platformy v141  
 
 Projekt składa się z 2 części:  
- 1. DLL zawierająca przestrzeń nazw  
- 2. Aplikacja, tworzona wg szablonów Paint.  
+* DLL zawierająca przestrzeń nazw
+* Aplikacja, tworzona wg szablonów Paint.
   * Aplikacja korzysta w WinAPI, HDC do tworzenia obszaru rysowania.  
   * Rysowanie każdej figury - tworzymy obszar selekcji (jego bezwzględne wymiary), a dopiero w jego środku samą figurę, w określonym kolorze (sourceFiles/DrawObj).  
   * Operacja zapisu korzysta z uniwersalnego JSONa  
