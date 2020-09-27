@@ -1,9 +1,10 @@
 # PaintWinCpp
 
-Wymagania dla dll i aplikacji(Ostatnia poprawna kompilacja):  
-Visual Studio 2017  
-Windows SDK 10.0.18362.0  
-Narzędzia platformy v141  
+*Wymagania dla dll i aplikacji(Ostatnia poprawna kompilacja):  
+ *Visual Studio 2017  
+ *Windows SDK 10.0.18362.0  
+ *Narzędzia platformy v141  
+
 Projekt składa się z 2 części:  
 Jedna z nich to DLL zawierająca przestrzeń nazw  
 Druga z nich to aplikacja, tworzona wg szablonów Paint.  
