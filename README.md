@@ -1,6 +1,6 @@
 # PaintWinCpp
 
-* Wymagania dla dll i aplikacji(Ostatnia poprawna kompilacja):  
+Wymagania dla dll i aplikacji(Ostatnia poprawna kompilacja):  
  * Visual Studio 2017  
  * Windows SDK 10.0.18362.0  
  * Narzędzia platformy v141  
